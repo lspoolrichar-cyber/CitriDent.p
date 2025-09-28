@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CitriDent - Gel Dental Natural</title>
+  <style>
+    /* ----- PALETA DE COLORES ----- */
+    :root {
+      --azul-claro: #00c6ff;
+      --azul-oscuro: #0072ff;
+      --verde-mint: #2ecc71;
+      --gris-texto: #2c3e50;
+      --gris-claro: #f4f6f9;
+      --blanco: #ffffff;
+    }
+
+    /* ----- ESTILOS GENERALES ----- */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--gris-claro);
+      color: var(--gris-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--azul-claro), var(--azul-oscuro));
+      color: var(--blanco);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .texto-logo {
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .logo {
+      width: 70px;
+      height: auto;
+    }
+
+    header p {
+      margin: 5px 0;
+    }
+
+    nav {
+      background-color: var(--blanco);
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 14px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: var(--azul-oscuro);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--verde-mint);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .container h2 {
+      font-size: 38px;
+      color: var(--azul-oscuro);
+      margin-bottom: 15px;
+    }
+
+    .container p.subtitulo {
+      font-size: 20px;
+      color: var(--verde-mint);
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+
+    .producto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .producto img {
+      width: 320px;
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .producto img:hover {
+      transform: scale(1.05);
+    }
+
+    .descripcion {
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .descripcion p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .descripcion strong {
+      color: var(--azul-oscuro);
+    }
+
+    a.boton {
+      display: inline-block;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-claro));
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    a.boton:hover {
+      background: linear-gradient(135deg, var(--verde-mint), var(--azul-claro));
+    }
+
+    #ingredientes {
+      display: none;
+      margin: 30px auto;
+      padding: 20px;
+      border: 2px solid var(--azul-oscuro);
+      border-radius: 10px;
+      background-color: var(--blanco);
+      max-width: 600px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    footer {
+      background-color: var(--azul-oscuro);
+      color: var(--blanco);
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ----- ENCABEZADO ----- -->
+  <header>
+    <div class="logo-container">
+      <span class="texto-logo">CitriDent</span>
+      <img src="lobo.png" alt="Logo CitriDent" class="logo">
+    </div>
+    <p>Gel dental con <strong>Bicarbonato</strong>, <strong>Carbonato</strong> y <strong>Ácido Cítrico</strong>.</p>
+    <p><em>“La Sonrisa de la naturaleza”</em></p>
+  </header>
+
+  <!-- ----- MENÚ DE NAVEGACIÓN ----- -->
+  <nav>
+    <a href="productos.html">Catalogo</a>
+    <a href="odón.html">Ingredientes</a>
+   
+
+  </nav>
+
+  <!-- ----- CONTENIDO PRINCIPAL ----- -->
+  <div class="container">
+    <h2>✨ CitriDent</h2>
+    <p class="subtitulo">Innovación natural para tu sonrisa</p>
+
+    <div class="producto">
+      <img src="gel.png" alt="Gel dental CitriDent">
+
+      <div class="descripcion">
+        <p>CitriDent combina ciencia y naturaleza para cuidar tu sonrisa:</p>
+        <p>✔ <strong>Aceite de Coco:</strong> antimicrobiano, previene caries y reduce bacterias.</p>
+        <p>✔ <strong>Bicarbonato:</strong> ayuda a blanquear y limpiar suavemente.</p>
+        <p>✔ <strong>Ácido cítrico balanceado:</strong> refresca y aporta brillo.</p>
+        <p>✔ <strong>Aceites naturales:</strong> protección antimicrobiana y frescura duradera.</p>
+
+      
+      </div>
+    </div>
+
+    <div id="ingredientes">
+      <h3>Ingredientes activos</h3>
+      <ul>
+        <li><strong>Hidroxiapatita:</strong> mineral que imita al esmalte dental.</li>
+        <li><strong>Bicarbonato de sodio:</strong> efecto limpiador y antiácido.</li>
+        <li><strong>Ácido cítrico:</strong> refrescante en dosis seguras y controladas.</li>
+        <li><strong>Aceite de coco:</strong> propiedades antimicrobianas naturales.</li>
+        <li><strong>Endulzantes naturales:</strong> sin azúcar, seguros para dientes.</li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Sección de Contacto -->
+<div class="contacto">
+  <h2>Contacto</h2>
+  <p>📧 Email: <a href="mailto:lspoolrichar@gmail.com">contacto@citrident.com</a></p>
+  <p>📱 Teléfono/WhatsApp: <a href="https://wa.me/51941584691" target="_blank">+51 941584691</a></p>
+  <p>🌐 tik tok: <a href="https://www.tiktok.com/@citrident" target="_blank">@citrident_peru</a></p>
+
+  <div class="qr">
+    <p>Escanea nuestro QR:</p>
+    <!-- Cambia la URL por la imagen de tu QR -->
+    <img src="qr.jpg" alt="QR de CitriDent" width="150" height="150">
+  </div>
+</div>
+
+<!-- Estilos sugeridos -->
+<style>
+  .contacto {
+    background: #e8f5e9;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .contacto h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+  }
+  .contacto a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .contacto a:hover {
+    text-decoration: underline;
+  }
+  .qr {
+    margin-top: 15px;
+  }
+  .qr img {
+    border: 3px solid #2e7d32;
+    border-radius: 10px;
+  }
+</style>
+</body>
+</html>
